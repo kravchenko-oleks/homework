@@ -1,0 +1,10 @@
+namePrefix: dev-
+namespace: dev
+commonLabels:
+  charge_code: DEV123
+  env: dev
+resources:
+- ../../base
+patchesStrategicMerge:
+- set_replicas.yaml
+- set_hpa_replicas.yaml

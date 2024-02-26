@@ -1,0 +1,11 @@
+commonLabels:
+  charge_code: "12345"
+resources:
+- deployment.yaml
+- service_account.yaml
+- service.yaml
+- namespace.yaml
+- hpa.yaml
+#- job.yaml
+patchesStrategicMerge:
+- set_replicas.yaml

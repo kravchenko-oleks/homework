@@ -1,0 +1,10 @@
+namePrefix: prod-
+namespace: prod
+commonLabels:
+  charge_code: PRD321
+  env: prod
+resources:
+- ../../base
+patchesStrategicMerge:
+- set_replicas.yaml
+- set_hpa_replicas.yaml
